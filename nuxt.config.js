@@ -16,10 +16,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: 'KenGen | Home' },
-      {
-        property: 'og:description',
-        content: 'A simple Discord bot for your server.',
-      },
+      { property: 'og:description', content: 'A simple Discord bot for your server.'},
+      { name:'theme-color', content: '#5302e0'},
       { property: 'og:image', content: '@/static/assets/standard.gif' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
