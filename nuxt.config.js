@@ -4,8 +4,9 @@ export default {
     title: 'KenGen',
     script: [
       {
-        src: 'https://kit.fontawesome.com/32744a4164.js', crossorigin:"anonymous"
-      }
+        src: 'https://kit.fontawesome.com/32744a4164.js',
+        crossorigin: 'anonymous',
+      },
     ],
     htmlAttrs: {
       lang: 'en',
@@ -15,7 +16,10 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: 'KenGen | Home' },
-      { property: 'og:description', content: 'A simple Discord bot for your server.' },
+      {
+        property: 'og:description',
+        content: 'A simple Discord bot for your server.',
+      },
       { property: 'og:image', content: '@/static/assets/standard.gif' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
@@ -30,7 +34,7 @@ export default {
   plugins: [
     { src: '@/plugins/VueTyped', ssr: false },
     { src: '@/plugins/VueParticles', ssr: false },
-    { src: '@/plugins/VueScrollReveal', ssr: false }
+    { src: '@/plugins/VueScrollReveal', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

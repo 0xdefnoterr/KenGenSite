@@ -1,5 +1,5 @@
-import VueScrollReveal from 'vue-scroll-reveal';
-import Vue from 'vue';
+import VueScrollReveal from 'vue-scroll-reveal'
+import Vue from 'vue'
 // OR specifying custom default options for all uses of the directive
 Vue.use(VueScrollReveal, {
   class: 'v-scroll-reveal',
@@ -9,5 +9,4 @@ Vue.use(VueScrollReveal, {
   scale: 1,
   distance: '50px',
   mobile: false,
-
-});
+})

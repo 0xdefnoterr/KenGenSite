@@ -14,7 +14,11 @@
     <Stats />
     <Contributors />
     <div class="loader-wrapper">
-      <img src="@/static/assets/dancinganime-anime.gif" alt="Miam" class="UwU">
+      <img
+        src="@/static/assets/dancinganime-anime.gif"
+        alt="Miam"
+        class="UwU"
+      />
 
       <div class="longfazers">
         <span></span>
@@ -43,26 +47,26 @@ export default {
             value: 60,
             density: {
               enable: true,
-              value_area: 800
-            }
+              value_area: 800,
+            },
           },
           color: {
-            value: '#ffffff'
+            value: '#ffffff',
           },
           shape: {
             type: 'circle',
             stroke: {
               width: 0,
-              color: 'random'
+              color: 'random',
             },
             polygon: {
-              nb_sides: 1
+              nb_sides: 1,
             },
             image: {
               src: 'img/github.svg',
               width: 0,
-              height: 0
-            }
+              height: 0,
+            },
           },
           opacity: {
             value: 0.5,
@@ -71,8 +75,8 @@ export default {
               enable: false,
               speed: 2,
               opacity_min: 0.1,
-              sync: false
-            }
+              sync: false,
+            },
           },
           size: {
             value: 2.5,
@@ -81,15 +85,15 @@ export default {
               enable: false,
               speed: 7,
               size_min: 0.1,
-              sync: false
-            }
+              sync: false,
+            },
           },
           line_linked: {
             enable: true,
             distance: 120,
             color: '#ffffff',
             opacity: 0.4,
-            width: 1
+            width: 1,
           },
           move: {
             enable: true,
@@ -101,47 +105,47 @@ export default {
             attract: {
               enable: false,
               rotateX: 600,
-              rotateY: 1200
-            }
-          }
+              rotateY: 1200,
+            },
+          },
         },
         interactivity: {
           detect_on: 'window',
           events: {
             onhover: {
               enable: true,
-              mode: 'repulse'
+              mode: 'repulse',
             },
             onclick: {
               enable: false,
-              mode: 'push'
+              mode: 'push',
             },
-            resize: true
+            resize: true,
           },
           modes: {
             grab: {
               distance: 400,
               line_linked: {
-                opacity: 1
-              }
+                opacity: 1,
+              },
             },
             bubble: {
               distance: 400,
               size: 40,
               duration: 2,
               opacity: 8,
-              speed: 3
+              speed: 3,
             },
             repulse: {
-              distance: 150
+              distance: 150,
             },
             push: {
-              particles_nb: 4
+              particles_nb: 4,
             },
             remove: {
-              particles_nb: 2
-            }
-          }
+              particles_nb: 2,
+            },
+          },
         },
         retina_detect: true,
         config_demo: {
@@ -150,13 +154,13 @@ export default {
           background_image: '',
           background_position: '50% 50%',
           background_repeat: 'no-repeat',
-          background_size: 'cover'
-        }
-      }
+          background_size: 'cover',
+        },
+      },
     }
   },
-  mounted () {
-    $(window).on('load', function() {
+  mounted() {
+    $(window).on('load', function () {
       $('.loader-wrapper').fadeOut('slow')
     })
     $(window).scroll(function () {
@@ -174,7 +178,7 @@ export default {
     $('.scroll-up-btn').click(function () {
       $('html').animate({ scrollTop: 0 }, 600)
     })
-  }
+  },
 }
 </script>
 

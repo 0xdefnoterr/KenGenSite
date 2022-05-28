@@ -1,7 +1,7 @@
 <template>
   <main>
     <h1>Redirecting you to the invite page.</h1>
-    <img src="@/static/assets/dancinganime-anime.gif" alt="Miam">
+    <img src="@/static/assets/dancinganime-anime.gif" alt="Miam" />
   </main>
 </template>
 
@@ -13,11 +13,18 @@ export default {
       title: 'Redirecting you to the invite page.',
       meta: [
         { name: 'description', content: 'Redirecting you to the invite page.' },
-        { 'http-equiv': 'refresh', content: '2; url=https://discord.com/oauth2/authorize?client_id=968955497824792686&scope=bot&permissions=8' },
-        { property: 'og:title', content: 'Redirecting you to the invite page.'}
+        {
+          'http-equiv': 'refresh',
+          content:
+            '2; url=https://discord.com/oauth2/authorize?client_id=968955497824792686&scope=bot&permissions=8',
+        },
+        {
+          property: 'og:title',
+          content: 'Redirecting you to the invite page.',
+        },
       ],
     }
-  }
+  },
 }
 </script>
 

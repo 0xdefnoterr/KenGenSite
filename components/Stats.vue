@@ -9,7 +9,7 @@
             <i class="fas fa-server" />
             <div class="text">Servers</div>
 
-            <p id="server-count">{{serverCount}}</p>
+            <p id="server-count">{{ serverCount }}</p>
           </div>
         </div>
 
@@ -19,7 +19,7 @@
 
             <div class="text">Users</div>
 
-            <p id="user-count">{{userCount}}</p>
+            <p id="user-count">{{ userCount }}</p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@
 
             <div class="text">Commands</div>
 
-            <p id="command-count">{{commandCount}}</p>
+            <p id="command-count">{{ commandCount }}</p>
           </div>
         </div>
       </div>
@@ -53,14 +53,14 @@ export default {
   methods: {
     async getStats() {
       await fetch('https://api.statcord.com/v3/968955497824792686')
-        .then(response => response.json())
-        .then(data => {
-          let strData = data.data[0] 
+        .then((response) => response.json())
+        .then((data) => {
+          let strData = data.data[0]
           this.serverCount = strData.servers
           this.userCount = strData.users
           this.commandCount = strData.commands
         })
-    }
-  }
+    },
+  },
 }
 </script>
